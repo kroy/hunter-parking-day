@@ -1,0 +1,19 @@
+---
+interface Props {
+	title?: string;
+  sameWindow?: boolean
+  href: string;
+  class?: string;
+}
+
+const { title, href, sameWindow = false, class: className } = Astro.props;
+---
+
+<a
+  class:list={["underline font-bold underline-offset-4 drop-shadow-sm decoration-accent decoration-2", className]}
+  href={href}
+  rel="noopener"
+  title={title}
+  target={sameWindow ? "_self" : "_blank"}>
+  <slot />
+</a>

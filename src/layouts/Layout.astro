@@ -12,17 +12,29 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
+		<meta property="og:title" content="Hunter Park(ing) Day" />
+		<meta property="og:description" content="Imagine a pedestrianized 68th st" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/og_image.svg" />
+		<meta property="og:image:alt" content="no parking sign" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="stylesheet" href="https://use.typekit.net/zok3iub.css">
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="p-4 bg-background">
+		<header class="flex flex-col lg:items-center pb-8">
+			<div class="text-4xl font-extralight">Hunter College</div>
+			<div class="text-6xl font-[puffin-arcade-liquid]">Park(ing) Day</div>
+		</header>
 		<slot />
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
+		--background: hsl(271.05,69.76%,59.8%);
+		--light: hsl(271.2,69.44%,71.76%);
+		--text-dark: hsl(271.2,69.44%,14.12%);
+		--accent: hsl(91.05,69.76%,59.8%);
 		--accent-light: 224, 204, 250;
 		--accent-dark: 49, 10, 101;
 		--accent-gradient: linear-gradient(
@@ -34,6 +46,7 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: newnord, sans-serif;
+		color: var(--text-dark);
 	}
 	code {
 		font-family:

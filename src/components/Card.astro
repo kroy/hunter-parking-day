@@ -1,12 +1,13 @@
 ---
 interface Props {
 	title?: string;
+	class?: string;
 }
 
-const { title, body } = Astro.props;
+const { title, class: className } = Astro.props;
 ---
 
-<div class="bg-pink-200 border-pink-500 rounded-lg h-full w-full p-4 text-center flex flex-col gap-2">
+<div class:list={["bg-light rounded-lg h-full w-full p-4 text-center flex flex-col justify-center gap-2", className]}>
 		{
 			title &&
 			<h2>
