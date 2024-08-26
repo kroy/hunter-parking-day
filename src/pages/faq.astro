@@ -1,11 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Link from '../components/Link.astro';
 ---
 
-<Layout title="Hunter Park(ing) Day">
-	<main class="flex flex-col items-center">
-		FAQ
+<Layout title="FAQ | Hunter Park(ing) Day">
+	<main class="flex flex-col items-center gap-4">
+		<div class="text-3xl">
+      Frequently Asked Questions
+    </div>
+
+    <div class="flex flex-col items-start gap-2">
+      <div class="font-bold">
+        What is "Park(ing) day?"
+      </div>
+
+      <div>
+        Park(ing) Day is a day for people to repurpose curbside parking spaces. 
+        The idea is to turn car storage into something more useful for people. 
+        More info on their <Link href='https://www.myparkingday.org/'>website</Link>
+      </div>
+
+      <div class="font-bold">
+        What's wrong with parking?
+      </div>
+
+      <div>
+        Parking dedicates valuable public space to facilitate driving, the dirtiest, loudest, most dangerous form of transportation. 
+        Yuge waste of space. 
+      </div>
+    </div>
 	</main>
 </Layout>

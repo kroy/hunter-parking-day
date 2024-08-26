@@ -23,8 +23,10 @@ const { title } = Astro.props;
 	</head>
 	<body class="p-4 bg-background">
 		<header class="flex flex-col lg:items-center pb-8">
+			<a href="/">
 			<div class="text-4xl font-extralight">Hunter College</div>
-			<div class="text-6xl font-[puffin-arcade-liquid]">Park(ing) Day</div>
+			<div class="text-6xl font-[puffin-arcade-liquid] underline decoration-wavy decoration-accent decoration-[1.5px]">Park(ing) Day</div>
+			</a>
 		</header>
 		<slot />
 	</body>
