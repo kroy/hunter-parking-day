@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700">
+  <defs>
+    <filter id="a" width="140%" height="140%" x="-20%" y="-20%" color-interpolation-filters="linearRGB" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse">
+      <feTurbulence width="100%" height="100%" x="0%" y="0%" baseFrequency=".053" numOctaves="4" result="turbulence" seed="15" stitchTiles="stitch" type="fractalNoise"/>
+      <feSpecularLighting width="100%" height="100%" x="0%" y="0%" in="turbulence" lighting-color="hsl(91.05,69.76%,59.8%)" result="specularLighting" specularConstant="1.1" specularExponent="20" surfaceScale="6">
+        <feDistantLight azimuth="3" elevation="72"/>
+      </feSpecularLighting>
+    </filter>
+  </defs>
+  <path fill="hsl(271.05,69.76%,59.8%)" d="M0 0h700v700H0z"/>
+  <path fill="hsl(91.05,69.76%,59.8%)" d="M0 0h700v700H0z" filter="url(#a)"/>
+</svg>

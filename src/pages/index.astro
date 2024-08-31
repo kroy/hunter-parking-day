@@ -1,74 +1,70 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Link from '../components/Link.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Link from "../components/Link.astro";
 ---
 
-<Layout title="Hunter Park(ing) Day">
-	<main class="flex flex-col items-center">
-		<div class="grid text-center items-center justify-center align-center grid-flow-row gap-2 grid-cols-1 lg:grid-cols-3 w-full lg:w-3/4">
-			<Card>
-					<div class="font-bold">
-						Friday September 20 @ 12-7PM
-					</div>
-					<div class="font-bold">
-						<Link href="https://maps.app.goo.gl/aQXYzs9JTh42oPXZ9">68th between Lexington and Park</Link>
-					</div>
-					<div>
-						We're turning the street into a park! Space to eat and lounge, live music, educational talks, and more on the street where people usually park their cars.
-					</div>
-			</Card>
-			<Card>
-				<div class="font-bold text-2xl">
-					Events
-				</div>
-				<div>
-					<span class="font-bold">12 PM</span> Park opens on 68th
-				</div>
-				<div>
-					<span class="font-bold">1-3PM</span> DJ Danger Wagon plays a set
-				</div>
-				<div>
-					<span class="font-bold">3-4PM</span> Talk by Hunter College Professor Pedestrian Walker on how big car scammed us
-				</div>
-				<div>
-					<span class="font-bold">4-7PM</span> Hang out
-				</div>
-				<div>
-					<span class="font-bold">7PM</span> Close
-				</div>
-			</Card>
-			<div class="grid lg:row-span-2">
-				<Card>
-					<iframe class="w-full h-[450px] rounded-lg" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d755.4324175440343!2d-73.96497739944846!3d40.76797009336347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQ2JzA1LjIiTiA3M8KwNTcnNTIuOSJX!5e0!3m2!1sen!2sus!4v1724462235185!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</Card>
-			</div>
-			<Card>
-				<div>
-					As part of <Link href="https://www.myparkingday.org/">Park(ing) Day 2024</Link>,
-					 Hunter Students and <Link href="https://www.streetlab.org/">Streetlab</Link>
-					 are turning a few parking spaces on 68th into a 🪩 party 🪩.
-				</div>
-				<div>
-					Come learn, socialize, dance... anything except park your car on the curb.
-				</div>
-			</Card>
-			<Link class="h-full" href='/faq' sameWindow={true}>
-				<Card>
-					FAQ
-				</Card>
-				</Link>
-				<Card>
-					<div class="font-bold">Sponsored By</div>
-					<div class="flex flex-col gap-2 lg:flex-row justify-around">
-						<Link href="https://www.streetlab.org/">
-						<div class="flex flex-col gap-2 items-center">
-							<img width=250 src="/streetlab_logo.png" alt="Streetlab Logo"/>
-							<div class="text-2xl">Streetlab</div>
-						</div>
-					</Link>
-					</div>
-				</Card>
-		</div>
-	</main>
+<Layout title="Home">
+  <main class="flex flex-col items-center gap-4">
+    <div
+      class="flex flex-col gap-2 text-center items-center justify-center align-center w-full lg:w-3/4"
+    >
+      <div class="text-2xl font-extralight">
+        Imagine 68th and Lex looking like this:
+      </div>
+      <img
+        src="/68th_vision_design_hires.png"
+        alt=""
+        class="w-full rounded-lg neo-brutal"
+      />
+      <div class="text-2xl font-extralight">Instead of:</div>
+      <img
+        src="/68th_vision_design.jpg"
+        alt=""
+        class="w-full rounded-lg neo-brutal"
+      />
+      <Card>
+        <div class="text-2xl">Hunter Deserves a Connected Campus</div>
+        <div>
+          <Link href="/walkable-68" sameWindow={true}>Read the Plan Here</Link>
+        </div>
+
+        <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="grid grid-cols-subgrid">
+            <div class="underline decoration-dashed font-bold pb-2">
+              Current Campus at Hunter 68th:
+            </div>
+            <ul>
+              <li>Severe overcrowding</li>
+              <li>Lack of quad and communal space</li>
+              <li>Rampant illegal parking on 68th</li>
+              <li>
+                Traffic causing delays on the M66, an important bus line for
+                Hunter Students
+              </li>
+              <li>High air pollution due to congestion</li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-subgrid">
+            <div class="underline decoration-dashed font-bold pb-2">
+              A Pedestrian-friendly 68th would:
+            </div>
+            <ul>
+              <li>Relieve severe indoor overcrowding</li>
+              <li>
+                Promote campus culture with opportunities for spontaneous
+                encounters (anyone into making friends?)​
+              </li>
+              <li>
+                Provide a true public space for community and students to mingle
+              </li>
+              <li>Provide opportunities for entrepreneurs</li>
+              <li>Reduce air pollution</li>
+            </ul>
+          </div>
+        </div>
+      </Card>
+    </div>
+  </main>
 </Layout>
