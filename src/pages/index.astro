@@ -7,7 +7,7 @@ import Link from "../components/Link.astro";
 <Layout title="Home">
   <main class="flex flex-col items-center gap-4">
     <div
-      class="flex flex-col gap-2 text-center items-center justify-center align-center w-full lg:w-3/4"
+      class="flex flex-col gap-4 text-center items-center justify-center align-center w-full lg:w-3/4"
     >
       <div class="text-2xl font-extralight">
         Imagine 68th and Lex looking like this:
@@ -26,13 +26,15 @@ import Link from "../components/Link.astro";
       <Card>
         <div class="text-2xl">Hunter Deserves a Connected Campus</div>
         <div>
-          <Link href="/walkable-68" sameWindow={true}>Read the Plan Here</Link>
+          <Link href="/walkable-68" sameWindow={true}
+            >Read the Full Plan Here</Link
+          >
         </div>
 
         <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-2 gap-4">
           <div class="grid grid-cols-subgrid">
             <div class="underline decoration-dashed font-bold pb-2">
-              Current Campus at Hunter 68th:
+              Current Conditions at Hunter 68th:
             </div>
             <ul>
               <li>Severe overcrowding</li>
@@ -40,7 +42,7 @@ import Link from "../components/Link.astro";
               <li>Rampant illegal parking on 68th</li>
               <li>
                 Traffic causing delays on the M66, an important bus line for
-                Hunter Students
+                Hunter students
               </li>
               <li>High air pollution due to congestion</li>
             </ul>
@@ -54,7 +56,7 @@ import Link from "../components/Link.astro";
               <li>Relieve severe indoor overcrowding</li>
               <li>
                 Promote campus culture with opportunities for spontaneous
-                encounters (anyone into making friends?)​
+                encounters
               </li>
               <li>
                 Provide a true public space for community and students to mingle
