@@ -52,7 +52,17 @@ import Link from "../../components/Link.astro";
       </Link>
       <Card>
         <div class="font-bold">Sponsored By</div>
-        <div class="flex flex-col gap-2 lg:flex-row justify-around">
+        <div class="flex flex-col gap-4 items-center justify-around">
+          <Link href="https://www.transalt.org/">
+            <div class="flex flex-col gap-2 items-center">
+              <img
+                width="250"
+                src="/transalt_logo.png"
+                alt="Transportation Alternatives Logo"
+              />
+              <div class="text-2xl">Transportation Alternatives</div>
+            </div>
+          </Link>
           <Link href="https://www.streetlab.org/">
             <div class="flex flex-col gap-2 items-center">
               <img width="250" src="/streetlab_logo.png" alt="Streetlab Logo" />
