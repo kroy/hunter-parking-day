@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@supabase/supabase-js", "npm:2.45.3"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
+          ["@vercel/analytics", "virtual:5a591f1923c07710cbea5fbfdbf9ae08464abe101fb0e5a2d1c0dd9f1875b7f425ed1976915d62b89ff93786e7bb2e4f08b262dd5d97728c0914c4f41d3a3ee6#npm:1.3.1"],\
           ["astro", "npm:4.15.4"],\
           ["drizzle-kit", "npm:0.24.2"],\
           ["drizzle-orm", "virtual:5a591f1923c07710cbea5fbfdbf9ae08464abe101fb0e5a2d1c0dd9f1875b7f425ed1976915d62b89ff93786e7bb2e4f08b262dd5d97728c0914c4f41d3a3ee6#npm:0.33.0"],\
@@ -2098,6 +2099,24 @@ const RAW_RUNTIME_STATE =
           ["@types/react", null],\
           ["next", null],\
           ["react", null],\
+          ["server-only", "npm:0.0.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/next",\
+          "@types/react",\
+          "next",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:5a591f1923c07710cbea5fbfdbf9ae08464abe101fb0e5a2d1c0dd9f1875b7f425ed1976915d62b89ff93786e7bb2e4f08b262dd5d97728c0914c4f41d3a3ee6#npm:1.3.1", {\
+        "packageLocation": "./.yarn/__virtual__/@vercel-analytics-virtual-70a8e3d770/0/cache/@vercel-analytics-npm-1.3.1-fdf1f71ba5-81a3bfc49e.zip/node_modules/@vercel/analytics/",\
+        "packageDependencies": [\
+          ["@vercel/analytics", "virtual:5a591f1923c07710cbea5fbfdbf9ae08464abe101fb0e5a2d1c0dd9f1875b7f425ed1976915d62b89ff93786e7bb2e4f08b262dd5d97728c0914c4f41d3a3ee6#npm:1.3.1"],\
+          ["@types/next", null],\
+          ["@types/react", "npm:18.3.5"],\
+          ["next", null],\
+          ["react", "npm:18.3.1"],\
           ["server-only", "npm:0.0.1"]\
         ],\
         "packagePeers": [\
@@ -4198,6 +4217,7 @@ const RAW_RUNTIME_STATE =
           ["@supabase/supabase-js", "npm:2.45.3"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
+          ["@vercel/analytics", "virtual:5a591f1923c07710cbea5fbfdbf9ae08464abe101fb0e5a2d1c0dd9f1875b7f425ed1976915d62b89ff93786e7bb2e4f08b262dd5d97728c0914c4f41d3a3ee6#npm:1.3.1"],\
           ["astro", "npm:4.15.4"],\
           ["drizzle-kit", "npm:0.24.2"],\
           ["drizzle-orm", "virtual:5a591f1923c07710cbea5fbfdbf9ae08464abe101fb0e5a2d1c0dd9f1875b7f425ed1976915d62b89ff93786e7bb2e4f08b262dd5d97728c0914c4f41d3a3ee6#npm:0.33.0"],\
