@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(271.05, 69.76%, 59.8%);
+  --light: hsl(271.2, 69.44%, 71.76%);
+  --text-dark: hsl(271.2, 69.44%, 14.12%);
+  --text-light: hsl(90, 69.23%, 94.9%);
+  --accent: hsl(91.05, 69.76%, 59.8%);
+  --accent-light: hsl(307.97, 69.76%, 59.8%);
+}
+html {
+  font-family: newnord, sans-serif;
+  font-weight: 300;
+  color: var(--text-light);
+}
+
+.neon {
+  box-shadow: 0 0 20px var(--accent), inset 0 0 20px var(--accent-light),
+    5px 5px 20px var(--accent);
+  color: var(--accent);
+}
+
+.neo-brutal {
+  border: 4px solid var(--text-dark);
+  box-shadow: 0 0 3px var(--accent-light), 5px 5px var(--text-dark);
+}
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
