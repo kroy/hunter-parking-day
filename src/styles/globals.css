@@ -2,31 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: hsl(271.05, 69.76%, 59.8%);
-  --light: hsl(271.2, 69.44%, 71.76%);
-  --text-dark: hsl(271.2, 69.44%, 14.12%);
-  --text-light: hsl(90, 69.23%, 94.9%);
-  --accent: hsl(91.05, 69.76%, 59.8%);
-  --accent-light: hsl(307.97, 69.76%, 59.8%);
+@layer base {
+  :root {
+    --background: 271.05 69.76% 59.8%;
+    --light: 271.2 69.44% 71.76%;
+    --text-dark: 271.2 69.44% 14.12%;
+    --foreground: 90 69.23% 94.9%;
+    --accent: 91.05 69.76% 59.8%;
+    --accent-foreground: 307.97 69.76% 59.8%;
+    --card: 0 0% 100%;
+    --card-foreground: 90 69.23% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 90 69.23% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 90 69.23% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 90 69.23% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 90 69.23% 60.1%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 90 69.23% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 271.05 69.76% 59.8%;
+    --light: 271.2 69.44% 71.76%;
+    --text-dark: 271.2 69.44% 14.12%;
+    --foreground: 90 69.23% 94.9%;
+    --accent: 91.05 69.76% 59.8%;
+    --accent-foreground: 307.97 69.76% 59.8%;
+    --card: 0 0% 100%;
+    --card-foreground: 90 69.23% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 90 69.23% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 90 69.23% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 90 69.23% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 90 69.23% 45.1%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 90 69.23% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
 }
-html {
-  font-family: newnord, sans-serif;
-  font-weight: 300;
-  color: var(--text-light);
-}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-light font-newnord;
+  }
 
-.neon {
-  box-shadow: 0 0 20px var(--accent), inset 0 0 20px var(--accent-light),
-    5px 5px 20px var(--accent);
-  color: var(--accent);
-}
+  .neon {
+    box-shadow: 0 0 20px hsl(var(--accent)),
+      inset 0 0 20px hsl(var(--accent-foreground)),
+      5px 5px 20px hsl(var(--accent));
+    color: hsl(var(--accent));
+  }
 
-.neo-brutal {
-  border: 4px solid var(--text-dark);
-  box-shadow: 0 0 3px var(--accent-light), 5px 5px var(--text-dark);
-}
-code {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  .neo-brutal {
+    border: 4px solid hsl(var(--text-dark));
+    box-shadow: 0 0 3px hsl(var(--accent-foreground)),
+      5px 5px hsl(var(--text-dark));
+  }
 }

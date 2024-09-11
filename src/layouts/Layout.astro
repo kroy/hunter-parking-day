@@ -1,5 +1,5 @@
 ---
-import EmailSubscribeForm from "../components/EmailSubscribeForm.astro";
+import { EmailSubscribeForm } from "../components/EmailSubscribeForm";
 import "../styles/globals.css";
 
 interface Props {
@@ -27,7 +27,7 @@ const { title } = Astro.props;
     <link rel="stylesheet" href="https://use.typekit.net/zok3iub.css" />
     <title>{title}</title>
   </head>
-  <body class="p-4 bg-background">
+  <body class="p-4 bg-background flex flex-col gap-4">
     <header
       class="flex flex-col md:flex-row justify-stretch items-center gap-2 lg:items-end pb-8"
     >
@@ -58,8 +58,8 @@ const { title } = Astro.props;
       }
     </header>
     <slot />
-    <footer class="hidden border-t-2 border-light">
-      <EmailSubscribeForm />
+    <footer class="border-t-2 p-4 border-light border-dashed">
+      <EmailSubscribeForm client:load />
     </footer>
   </body>
 </html>

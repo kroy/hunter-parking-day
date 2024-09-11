@@ -1,6 +1,6 @@
 import { pgSchema, serial, timestamp, varchar } from "drizzle-orm/pg-core";
 
-const schema = pgSchema("dev");
+const schema = pgSchema(import.meta.env.DATABASE_SCHEMA);
 
 export const emailSubscriber = schema.table("email_subscriber", {
   id: serial("id").primaryKey(),
