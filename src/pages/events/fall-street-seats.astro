@@ -1,0 +1,80 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+import Link from "../../components/Link.astro";
+---
+
+<Layout title="Hunter Fall Street Seats" showCta={false}>
+  <main class="flex flex-col items-center">
+    <div class="flex flex-col items-center">
+      <div
+        class="grid text-center items-center justify-center align-center grid-flow-row gap-2 grid-cols-1 lg:grid-cols-3 w-full lg:w-3/4"
+      >
+        <Card>
+          <div class="text-2xl font-bold">🍁Fall Street Seats🍁</div>
+          <div>
+            This November, Hunter Students and <Link
+              href="https://www.streetlab.org/">Street Lab</Link
+            >
+            are turning a few parking spaces on 68th into a cozy fall park.
+          </div>
+        </Card>
+        <Card>
+          <div class="font-bold">Friday November 15 @ 11AM-7PM</div>
+          <div class="font-bold">
+            <Link href="https://maps.app.goo.gl/aQXYzs9JTh42oPXZ9"
+              >68th between Lexington and Park</Link
+            >
+          </div>
+          <div>
+            We're turning the street into a park! We'll create space to eat,
+            lounge, and more -- on the street where people usually park their
+            cars.
+          </div>
+        </Card>
+        <div class="grid lg:row-span-2">
+          <Card>
+            <iframe
+              class="w-full h-[450px] rounded-lg"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d755.4324175440343!2d-73.96497739944846!3d40.76797009336347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQ2JzA1LjIiTiA3M8KwNTcnNTIuOSJX!5e0!3m2!1sen!2sus!4v1724462235185!5m2!1sen!2sus"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </Card>
+        </div>
+
+        <Card>
+          It might be cold, so wear a sweater or bring a hot beverage of your
+          choice. Or maybe it'll be warm due accelerating climate change
+          partially driven by American car culture!
+        </Card>
+        <Card>
+          <div class="font-bold">Sponsored By</div>
+          <div class="flex flex-col gap-4 items-center justify-around">
+            <Link href="https://www.transalt.org/">
+              <div class="flex flex-col gap-2 items-center">
+                <img
+                  width="250"
+                  src="/transalt_logo.png"
+                  alt="Transportation Alternatives Logo"
+                />
+                <div class="text-2xl">Transportation Alternatives</div>
+              </div>
+            </Link>
+            <Link href="https://www.streetlab.org/">
+              <div class="flex flex-col gap-2 items-center">
+                <img
+                  width="250"
+                  src="/streetlab_logo.png"
+                  alt="Streetlab Logo"
+                />
+                <div class="text-2xl">Street Lab</div>
+              </div>
+            </Link>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </main>
+</Layout>

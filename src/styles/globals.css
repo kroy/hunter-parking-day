@@ -16,6 +16,10 @@
     --popover-foreground: 90 69.23% 3.9%;
     --primary: 0 0% 9%;
     --primary-foreground: 90 69.23% 98%;
+    --pumpkin-background: 31.05 69.76% 59.8%;
+    --pumpkin-light: 36.09 100% 74.9%;
+    --pumpkin-foreground: 36.92 100% 97.45%;
+    --pumpkin-accent: 15.42 100% 50.39%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 90 69.23% 9%;
     --muted: 0 0% 96.1%;
@@ -75,6 +79,13 @@
       inset 0 0 20px hsl(var(--accent-foreground)),
       5px 5px 20px hsl(var(--accent));
     color: hsl(var(--accent));
+  }
+
+  .pumpkin-spice {
+    box-shadow: 0 0 20px hsl(var(--pumpkin-accent)),
+      inset 0 0 20px hsl(var(--pumpkin-light)),
+      5px 5px 20px hsl(var(--pumpkin-background));
+    color: hsl(var(--pumpkin-foreground));
   }
 
   .neo-brutal {

@@ -25,6 +25,12 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        pumpkin: {
+          DEFAULT: "hsl(var(--pumpkin-background))",
+          foreground: "hsl(var(--pumpkin-foreground))",
+          light: "hsl(var(--pumpkin-light))",
+          accent: "hsl(var(--pumpkin-accent))",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
